@@ -1,4 +1,4 @@
-// Defining the Person class
+// Define the Person class
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -11,7 +11,7 @@ class Person {
     }
 }
 
-// Defining the Employee class that inherits from Person
+// Define the Employee class that inherits from Person
 class Employee extends Person {
     constructor(name, age, jobTitle) {
         super(name, age); // Call the constructor of Person
@@ -32,3 +32,6 @@ person.greet();
 const employee = new Employee("Bob", 30, "Manager");
 employee.jobGreet(); 
 // Expected Output: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
+
+// Export the classes (Only needed if using Cypress or another module system)
+export { Person, Employee };
